@@ -5,12 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useState } from 'react'
+import * as React from 'react'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 import Footer from './Footer'
-const Layout = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false)
+
+const Layout: React.FC<{}> = ({ children }): JSX.Element => {
+  const [isOpen, setIsOpen] = React.useState<boolean>(false)
   return (
     <>
       <Navbar setIsOpen={setIsOpen} />
