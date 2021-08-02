@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-const myH2 = ({ children, title }) => {
+const myH2: React.FC<{ title: string }> = ({ children, title }) => {
   if (title) {
     return (
       <HeadingTwo>
@@ -13,8 +13,8 @@ const myH2 = ({ children, title }) => {
   return (
     <h2
       style={{
-        margin: "2rem 0",
-        color: "var(--clr-grey-5)",
+        margin: '2rem 0',
+        color: 'var(--clr-grey-5)',
       }}
     >
       {children}
@@ -31,7 +31,7 @@ const HeadingTwo = styled.div`
 `
 const myH4 = props => {
   return (
-    <h3 style={{ margin: "2rem 0", color: "var(--clr-primary-5)" }}>
+    <h3 style={{ margin: '2rem 0', color: 'var(--clr-primary-5)' }}>
       {props.children}
     </h3>
   )

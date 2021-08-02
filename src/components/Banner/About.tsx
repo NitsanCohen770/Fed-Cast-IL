@@ -4,12 +4,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Title from './Title'
 import styled from 'styled-components'
 
-const About = () => {
-  return (
-    <Wrapper>
-      Banner About
-    </Wrapper>
-  )
+const About: React.FC<{}> = () => {
+  return <Wrapper>Banner About</Wrapper>
 }
 
 const Wrapper = styled.div`

@@ -1,11 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-const Title = () => {
-  return (
-    <Wrapper>
-     Banner Title
-    </Wrapper>
-  )
+const Title: React.FC<{}> = () => {
+  return <Wrapper>Banner Title</Wrapper>
 }
 const Wrapper = styled.div`
   position: relative;

@@ -1,10 +1,10 @@
-import React from "react"
+import React from 'react'
 import {
   FaFacebookSquare,
   FaDribbbleSquare,
   FaTwitterSquare,
-} from "react-icons/fa"
-const SocialLinks = ({ styleClass }) => {
+} from 'react-icons/fa'
+const SocialLinks: React.FC<{ styleClass: string }> = ({ styleClass }) => {
   return (
     <ul className={styleClass}>
       <li>

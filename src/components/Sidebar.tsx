@@ -1,9 +1,12 @@
 import React from 'react'
 import Links from '../constants/links'
-import Categories from '../components/Categories'
+import Categories from './Categories'
 import { IoMdClose } from 'react-icons/io'
 
-const Sidebar = ({ isOpen, setIsOpen }) => {
+const Sidebar: React.FC<{ isOpen: boolean; setIsOpen: Function }> = ({
+  isOpen,
+  setIsOpen,
+}) => {
   return (
     <aside className={`sidebar ${isOpen ? 'showSidebar' : ' hideSidebar'}`}>
       <button

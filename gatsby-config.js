@@ -18,7 +18,6 @@ module.exports = {
         name: `assets`,
         path: `${__dirname}/src/assets`,
       },
-
       resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [

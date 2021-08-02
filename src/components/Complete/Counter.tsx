@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-const Counter = () => {
+import React from 'react'
+import styled from 'styled-components'
+const Counter: React.FC<{}> = () => {
   const [count, setCount] = React.useState(0)
   return (
     <Wrapper>

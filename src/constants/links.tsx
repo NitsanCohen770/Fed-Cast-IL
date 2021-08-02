@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-const Links = ({ styleClass, children }) => {
+const Links: React.FC<{ styleClass: string }> = ({ styleClass, children }) => {
   return (
     <ul className={styleClass}>
       <li>

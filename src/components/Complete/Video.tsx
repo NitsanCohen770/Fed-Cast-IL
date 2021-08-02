@@ -1,7 +1,7 @@
 import React from 'react'
 import video from '../../assets/connect.mp4'
 import styled from 'styled-components'
-export const RegVideo = () => {
+export const RegVideo: React.FC<{}> = () => {
   return (
     <RegVideoWrapper>
       <video controls autoPlay muted loop>

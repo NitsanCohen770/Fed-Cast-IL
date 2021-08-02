@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
-import { AiOutlineLike } from "react-icons/ai"
-const LikeButton = () => {
-  const [value, setValue] = React.useState(0)
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton: React.FC<{}> = () => {
+  const [value, setValue] = React.useState<number>(0)
   return (
     <Wrapper>
       <div>

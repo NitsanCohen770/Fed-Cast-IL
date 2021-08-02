@@ -5,15 +5,8 @@ import { Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Title from './Title'
 
-
-
-const Recent = () => {
-  
-  return (
-    <Wrapper>
-      Banner Recent
-    </Wrapper>
-  )
+const Recent: React.FC<{}> = () => {
+  return <Wrapper>Banner Recent</Wrapper>
 }
 
 const Wrapper = styled.div`

@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa'
 import logo from '../assets/logo-background.jpg'
 import Links from '../constants/links'
 import SocialLinks from '../constants/socialLinks'
-const Navbar = ({ setIsOpen }) => {
+const Navbar: React.FC<{ setIsOpen: Function }> = ({ setIsOpen }) => {
   return (
     <nav className="navbar">
       <div className="nav-center">
