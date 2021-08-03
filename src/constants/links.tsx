@@ -16,7 +16,7 @@ const Links: React.FC<{ styleClass: string }> = ({ styleClass, children }) => {
       </li>
       <li>
         <Link to="/newsletter" className="page-link">
-          עלון
+          הרשמה לעלון
         </Link>
       </li>
       <li>

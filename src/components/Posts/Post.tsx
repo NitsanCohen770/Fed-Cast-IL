@@ -5,11 +5,8 @@ import { IoMdArrowRoundForward } from 'react-icons/io'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Post = () => {
-  
-  return (
-    <h4>single post</h4>
-  )
+const Post: React.FC<{}> = () => {
+  return <h4>single post</h4>
 }
 
 const Wrapper = styled.article`

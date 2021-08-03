@@ -17,7 +17,7 @@ const Layout: React.FC<{}> = ({ children }): JSX.Element => {
       <Navbar setIsOpen={setIsOpen} />
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
       <main>{children}</main>
-      {/* <Footer/> */}
+      <Footer />
     </>
   )
 }
