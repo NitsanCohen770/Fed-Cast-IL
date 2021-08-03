@@ -193,17 +193,17 @@ Navbar
 .navbar {
   height: 5rem;
   display: flex;
-  align-items: center;
-  background: transparent;
-  position: absolute;
+  position: sticky;
+  top: 0;
   right: 0;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  align-items: center;
   background: linear-gradient(
     135deg,
     rgb(255, 192, 2) 0%,
     hsl(45.35, 95.52%, 45.69%) 100%
   );
+
   border-radius: 0px 0px 0px 100px;
 }
 .nav-center {
@@ -466,7 +466,7 @@ Single Pages
 .success-page,
 .error-page {
   font-family: var(--ff-hebrew-secondary);
-  min-height: 130vh;
+  min-height: calc(100vh - 7rem);
   background: var(--clr-grey-10);
 }
 .error-page h3 {
@@ -539,7 +539,6 @@ Single Pages
 }
 .submit-btn {
   font-weight: 400;
-  text-transform: capitalize;
   border-color: var(--clr-primary-5);
   border-right: var(--clr-primary-5);
 }

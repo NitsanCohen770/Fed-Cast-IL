@@ -8,7 +8,7 @@ const Footer: React.FC<{}> = () => {
       <p>
         &copy; {new Date().getFullYear()}{' '}
         <a href="https://www.linkedin.com/in/nitsan-cohen/">
-          Nitsan Cohen Web developr
+          NC web development
         </a>{' '}
         built with <a href="https://www.gatsbyjs.com/">Gatsby</a>
       </p>
