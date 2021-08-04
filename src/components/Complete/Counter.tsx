@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 const Counter: React.FC<{}> = () => {
-  const [count, setCount] = React.useState(0)
+  const [count, setCount] = React.useState<number>(0)
   return (
     <Wrapper>
       <h1>counter</h1>

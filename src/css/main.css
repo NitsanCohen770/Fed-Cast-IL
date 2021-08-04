@@ -59,7 +59,6 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  direction: rtl;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -69,6 +68,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  direction: rtl;
 }
 
 ul {
@@ -492,6 +492,7 @@ Single Pages
   background: var(--clr-primary-10);
 }
 .success-page h2 {
+  font-family: var(--ff-hebrew-secondary);
   margin-bottom: 1.5rem;
 }
 /* error page */
@@ -582,6 +583,7 @@ Testing Post and Components
   font-size: 1.2rem;
   overflow-x: scroll;
   position: relative;
+  direction: ltr !important;
 }
 .code pre {
   font-family: 'Courier New', Courier, monospace;
@@ -655,6 +657,7 @@ Footer
   background: var(--clr-black);
   display: grid;
   place-items: center;
+  align-content: center;
 }
 .footer-icons {
   display: flex;
@@ -665,6 +668,7 @@ Footer
 .footer-icons a {
   font-size: 1.5rem;
   margin: 0 0.5rem;
+  align-items: center;
   transition: var(--transition);
 }
 .footer-icons li {
