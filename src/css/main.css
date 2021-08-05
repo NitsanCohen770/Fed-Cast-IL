@@ -194,6 +194,7 @@ Navbar
   height: 5rem;
   display: flex;
   position: sticky;
+  z-index: 1000;
   top: 0;
   right: 0;
   left: 0;
@@ -396,8 +397,8 @@ Hero
     height: 20rem;
     display: block !important;
     position: absolute;
-    bottom: -40%;
-    left: 0;
+    bottom: -10%;
+    right: 35rem;
     transform: translate(-20%, 20%);
     z-index: 4;
   }

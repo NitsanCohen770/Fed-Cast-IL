@@ -1,12 +1,30 @@
 import React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { FaRegClock } from 'react-icons/fa'
-import { IoMdArrowRoundForward } from 'react-icons/io'
+import { IoMdArrowRoundBack } from 'react-icons/io'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const Post: React.FC<{}> = () => {
-  return <h4>single post</h4>
+const Post: React.FC<{ excerpt: string; frontmatter: {} }> = ({
+  excerpt,
+  frontmatter,
+}) => {
+  const { title, image, slug, date, category } = frontmatter
+  console.log(image)
+  return (
+    <Wrapper>
+      <GatsbyImage image={getImage(image)} alt={title} className="img" />
+      <div className="info">
+        <span className="category">{category}</span>
+        <h3>{title}</h3>
+        <div className="underline"></div>
+        <p>{excerpt}</p>
+        <Link to={`/posts/${slug}`} className="link">
+          המשך לקרוא <IoMdArrowRoundBack />
+        </Link>
+      </div>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.article`
