@@ -3,11 +3,19 @@ import styled from 'styled-components'
 import Categories from '../Categories'
 import Title from './Title'
 const BannerCategories: React.FC<{}> = () => {
-  return <Wrapper>Banner Categories</Wrapper>
+  return (
+    <Wrapper>
+      <Title title="קטגוריות" />
+      <Categories />
+    </Wrapper>
+  )
 }
 const Wrapper = styled.div`
   .category {
+    text-align: center;
     font-size: 1rem;
+    direction: ltr;
+    margin: auto;
     color: var(--clr-grey-5);
     text-transform: capitalize;
     display: block;

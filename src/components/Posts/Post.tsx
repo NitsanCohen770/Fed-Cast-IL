@@ -9,7 +9,7 @@ const Post: React.FC<{ excerpt: string; frontmatter: {} }> = ({
   excerpt,
   frontmatter,
 }) => {
-  const { title, image, slug, date, category } = frontmatter
+  const { title, image, slug, date, category, readTime } = frontmatter
   console.log(image)
   return (
     <Wrapper>
@@ -22,6 +22,12 @@ const Post: React.FC<{ excerpt: string; frontmatter: {} }> = ({
         <Link to={`/posts/${slug}`} className="link">
           המשך לקרוא <IoMdArrowRoundBack />
         </Link>
+        <footer>
+          <span className="date">
+            <FaRegClock className="icon" /> {date}
+          </span>
+          <span>{readTime} דקות קריאה</span>
+        </footer>
       </div>
     </Wrapper>
   )

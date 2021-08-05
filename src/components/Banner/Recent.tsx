@@ -4,9 +4,47 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Title from './Title'
-
+const query = graphql`
+  {
+    allMdx(sort: { fields: frontmatter___date, order: DESC }, limit: 5) {
+      nodes {
+        frontmatter {
+          title
+          slug
+          date(formatString: "MM/D/YYYY")
+          image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+        id
+      }
+    }
+  }
+`
 const Recent: React.FC<{}> = () => {
-  return <Wrapper>Banner Recent</Wrapper>
+  const data = useStaticQuery(query)
+  const {
+    allMdx: { nodes: posts },
+  } = data
+  return (
+    <Wrapper>
+      <Title title="פוסטים אחרונים" />
+      {posts.map(post => {
+        const { title, slug, date, image } = post.frontmatter
+        return (
+          <Link to={`/posts/${slug}`} key={post.id} className="post">
+            <GatsbyImage image={getImage(image)} alt={title} className="img" />
+            <div>
+              <h5>{title}</h5>
+              <p>{date}</p>
+            </div>
+          </Link>
+        )
+      })}
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.div`

@@ -16,7 +16,9 @@ const Sidebar: React.FC<{ isOpen: boolean; setIsOpen: Function }> = ({
         <IoMdClose />
       </button>
       <div className="sidebar-container">
-        <Links styleClass="sidebar-links" />
+        <Links styleClass="sidebar-links">
+          <Categories />
+        </Links>
       </div>
     </aside>
   )
