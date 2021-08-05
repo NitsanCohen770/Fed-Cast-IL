@@ -121,7 +121,7 @@ const Wrapper = styled.article`
       grid-template-columns: 30rem 1fr;
       column-gap: 1.5rem;
       .info {
-        text-align: left;
+        text-align: right;
       }
       .img {
         height: 100%;
