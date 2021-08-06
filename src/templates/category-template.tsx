@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
 
-const CategoryTemplate = props => {
+const CategoryTemplate: React.FC<{}> = props => {
   const {
     data: {
       allMdx: { nodes: posts },

@@ -6,7 +6,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Banner from '../components/Banner'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-const PostTemplate = ({ data }) => {
+const PostTemplate: React.FC<{}> = ({ data }) => {
   const {
     mdx: {
       frontmatter: { title, category, image, date },

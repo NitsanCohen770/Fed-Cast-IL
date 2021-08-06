@@ -21,7 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMdx.nodes.forEach(({ frontmatter: { slug } }) => {
     createPage({
       path: `/posts/${slug}`,
-      component: path.resolve(`src/templates/post-template.js`),
+      component: path.resolve(`src/templates/post-template.tsx`),
       context: {
         slug,
       },
@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.categories.distinct.forEach(category => {
     createPage({
       path: `/${category}`,
-      component: path.resolve(`src/templates/category-template.js`),
+      component: path.resolve(`src/templates/category-template.tsx`),
       context: {
         category,
       },
