@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: nitsancohen770/ fed-cast-il
+  repo: NitsanCohen770/Fed-Cast-IL
 
 media_folder: static/assets
 public_folder: /assets
