@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: NitsanCohen770/Fed-Cast-IL
+  branch:main
 
 media_folder: static/assets
 public_folder: /assets
@@ -10,7 +11,7 @@ identifier_field: name
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: posts
     create: true
     fields:
       - { name: path, label: Path }
