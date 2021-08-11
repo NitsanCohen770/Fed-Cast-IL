@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your Github username/ your repo name
+  repo: nitsancohen770/ fed-cast-il
 
 media_folder: static/assets
 public_folder: /assets
